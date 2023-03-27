@@ -1,36 +1,28 @@
-# Information Retrieval [Fact checking] from Wikipedia using FEVER
-The growing volume of falsehoods on the internet has prompted us to conduct research into automatic fact checking. In this project, we will be developing information retrieval and data mining methods to evaluate the truth of a claim. The automated fact checking project is divided into three steps:
-1.Retrieval of relevant documents
-2.Selection of evidence sentences
-3.Prediction of claim truthfulness.
+1. Automatic extraction based on weighting
+This approach treats sentences as ordered sequences and words as ordered sequences within sentences. It follows four fundamental steps:
 
-We will be using the publicly available Fact Extraction and Verification (FEVER) dataset 1. It consists of 185,445 claims manually verified against Wikipedia pages and classified as Supported, Refuted and NotEnoughInfo. For the first two classes, there is a combination of sentences forming the necessary evidence supporting or refuting the claim. This dataset consists of a collection of documents (wiki-pages), a labeled training subset (train.jsonl), a labeled development subset (dev.jsonl) and a reserved testing subset (test.jsonl). For a claim in the train.jsonl file, the value of the "evidence" field is a list of relevant sentences in the format of [_, _, wiki document ID, sentence ID]. More details about this dataset can be found in [http://fever.ai/resources.html] and this website [http://fever.ai/2018/task.html]. A demo for reading this dataset is on the website [https://github.com/QiangAIResearcher/Fact-Extraction-and-Verification].
+o Weighting of words o Weighting of sentences o Choosing all sentences above a certain weight threshold o Ordering the selected sentences as they appear in the original article
 
-## Involved Subtasks
+The approach of weighting is based on frequencies.
+Term frequency is the number of a times a word occurs within a document. Inverted document frequency is 1 / number of documents the words appears in.
 
-### 1.Text Statistics.
-We count the frequencies of every term in the collection of documents, plot the curve of term frequencies and verify Zipf’s Law. Report the values of the parameters for Zipf’s law for this corpus.
+Additionally the score incorporates parameters like location of the word, syntactic structure of the sentence in which it appears, presence of the word in title etc. Each sentence is assigned a weight equal to the sum of weights of the words. Once all sentences are weighted, they are sorted in descending order of their weights. A certain threshold is set on the weight of a sentence that can be in a summary and then the sentences are filtered. The filtered sentences are put in the original order as they appear in the document. This approach is a statistical method that purely relies on term level content of the story. This method involves preprocessing on terms like removing stop words, normalizing terms, replacing synonyms etc.
 
-### 2.Vector Space Document retrieval.
-Extract TF-IDF representations of the claims and all the documents respectively based on the document collection. The goal of this representation to later compute the cosine similarity between the document and the claims. Given a claim, we compute its cosine similarity with each document and return the document ID (the "id" field in the wiki-page) of the five most similar documents for that claim.
+2. Automatic Summary Extraction based on user query
+This approach performs weighting of sentences based on the incoming user query, the weight of query calculated using number of sentences the query occurs in.
 
-### 3.Probabilistic Document Retrieval.
-Upcoming Work
+The combination of these 2 retrieves important phrases in the story relevant to the user query. This finds applications in creating a story search engine where a user can query for a story subject like “student wizard magic potions” and the search engine would present books like Harry Potter with a summary of the books extracted using this query. This will present the user with relevant stories and the part of the stories they are interested in.
 
-### 4.Sentence Relevance.
-Upcoming Work
+3. Information Extraction
+This method works in 2 phases. Selection of useful information and generation of a summary using the information. This improves upon the naïve automatic extraction technique by adding summary composition to create a more readable and coherent summary.
+The steps in this algorithm are:
 
-### 5.Relevance Evaluation.
-Upcoming Work
-
-### 6.Truthfulness of Claims.
-Upcoming Work
-
-### 7.Propose ways to improve the machine learning models we have implemented.
-Upcoming Work
-
-## This project including the following files:
-
-1.Report.pdf: The report about this information retrieval and data mining project.
-
-2.instructions.txt: The exlaination of how to run the code to reproduce the result shown in the report.
+Preprocess document to remove punctuations, bracket symbols, expand short form of some words.
+Annotate each word with its part of speech information example if it is a noun/verb/adjective and so on.
+Extract subject-verb-object triplets from each sentence.
+Filter out triplets where verb is a past participle, infinitive, part of a conditional clause. These leads to false rejections as well which need to be controlled by correctly identifying triplets in multi verb sentences.
+Generate noun phrases to represent subject, object, and indirect object of the sentences.
+Generate a verb complement if no subject is present. Prepositional phrase generation for complementing noun phrases.
+Generate verb phrase to link all components together.
+Rank generated sentences using Document frequency of their terms.
+Merge the sentence to form a summary. This is done by combining the generated sentences, then greedily pulling out subjects to see if the sentence can be reduced. This step uses a natural language generation engine.
