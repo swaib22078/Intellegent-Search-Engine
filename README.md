@@ -1,8 +1,11 @@
 <h1 align="left">
   IR_PROJECT
 </h1>
+Information retrievel Course Project
 
-
+<h1 align="left">
+  Fact Extraction From Wikipedia
+</h1>
 
 <h1 align="left">
   Contributors
