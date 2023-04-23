@@ -7,7 +7,21 @@ Information retrievel Course Project
   Fact Extraction From Wikipedia
 </h1>
 
-<img src=""
+FRONT PAGE OF OUR PROJECT
+
+<img src="images/Ir_project_Front_page.png">
+
+<h1 align="left">
+  Synopsis
+</h1>
+
+“ Fact extraction from a given Query with ranking as relevancy ” - The problem statement is to develop a system that can extract relevant facts or information from a given website link when a query is entered. The system will utilize a mixture of several techniques and advance algorithms. The main goal is to provide users with accurate and useful information from the website link that is most relevant to their query by ranking them.
+
+<h1 align="left">
+  Work Flow
+</h1>
+
+<img src="images/Ir_project_Front_page.png">
 
 <h1 align="left">
   Contributors
