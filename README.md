@@ -4,7 +4,7 @@
 Information retrievel Course Project
 
 <h1 align="left">
-  Fact Extraction From Wikipedia
+  Intelligent Search Engine
 </h1>
 
 FRONT PAGE OF OUR PROJECT
