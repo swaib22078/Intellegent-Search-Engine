@@ -67,6 +67,14 @@ $ ./app.py
 ```bash
 Open localhost:4000 on browser
 ```
+6.Run Code
+
+```bash
+1. We go to app.py directory
+2. Run python3 app.py
+3. Open the local host link http://127.0.0.1:4000/
+4. Enter query and summary is generated.
+```
 
 <h1 align="left">
   Contributors
