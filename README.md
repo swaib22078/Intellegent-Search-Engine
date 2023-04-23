@@ -91,7 +91,7 @@ Retrievel page
   Contributors
 </h1>
 
-- [Kamta Prasad](https://github.com/kpshukla123)
+- [Kamta Prasad Shukla](https://github.com/kpshukla123)
 - [Naveesh Rana](https://github.com/Naveeshrana22043)
 - [Nandini Soni](https://github.com/soninandini)
 - [Divy Thakkar](https://github.com/divythakkar111)
