@@ -94,9 +94,11 @@ Open localhost:4000 on browser
 
 Home page
 
+
 <img src="images/Ir_project_Front_page.png">
 
 Retrievel page
+
 
 <img src="images/retrievel_img.png">
 
