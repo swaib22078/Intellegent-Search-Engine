@@ -26,6 +26,10 @@ Work flow of our project
 <img src="images/ppt_ir.png">
 
 <h1 align="left">
+  Development setup
+</h1>
+
+<h1 align="left">
   Contributors
 </h1>
 
