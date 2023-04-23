@@ -85,7 +85,7 @@ Home page
 
 Retrievel page
 
-
+<img src="images/retrievel_img.png">
 
 <h1 align="left">
   Contributors
