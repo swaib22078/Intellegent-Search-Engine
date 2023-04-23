@@ -36,6 +36,7 @@ HTMTL,CSS
 FLASK,
 ```
 2.Back end
+
 ```bash
 Python
 bm25(Rank retrievel),web scraping,F1 Score.
@@ -52,7 +53,16 @@ pip3 install rank_bm25
 pip3 install bs4
 pip3 install gensim
 ```
-4.Localhost
+4.Activate virtual Environment in Windows using VScode
+
+```bash
+$ pip install virtualenv
+$ virtualenv env
+$ source ./env/Scripts/activate
+$ ./app.py
+```
+
+5.Localhost
 
 ```bash
 Open localhost:4000 on browser
