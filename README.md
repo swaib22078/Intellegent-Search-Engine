@@ -75,6 +75,17 @@ Open localhost:4000 on browser
 3. Open the local host link http://127.0.0.1:4000/
 4. Enter query and summary is generated.
 ```
+<h1 align="left">
+  User Interface
+</h1>
+
+Home page
+
+<img src="images/Ir_project_Front_page.png">
+
+Retrievel page
+
+
 
 <h1 align="left">
   Contributors
