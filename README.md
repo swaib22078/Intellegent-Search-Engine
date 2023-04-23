@@ -29,6 +29,35 @@ Work flow of our project
   Development setup
 </h1>
 
+1.Front end
+
+```bash
+HTMTL,CSS
+FLASK,
+```
+2.Back end
+```bash
+Python
+bm25(Rank retrievel),web scraping,F1 Score.
+```
+3.Required Python libraries
+
+```bash
+pip3 install flask
+pip3 install transformers
+pip3 install pandas
+pip3 install nltk
+pip3 install pytorch torchvision -c pytorch
+pip3 install rank_bm25
+pip3 install bs4
+pip3 install gensim
+```
+4.Localhost
+
+```bash
+Open localhost:4000 on browser
+```
+
 <h1 align="left">
   Contributors
 </h1>
