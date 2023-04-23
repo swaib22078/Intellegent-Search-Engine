@@ -7,6 +7,8 @@ Information retrievel Course Project
   Fact Extraction From Wikipedia
 </h1>
 
+<img src=""
+
 <h1 align="left">
   Contributors
 </h1>
