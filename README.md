@@ -21,7 +21,9 @@ FRONT PAGE OF OUR PROJECT
   Work Flow
 </h1>
 
-<img src="images/Ir_project_Front_page.png">
+Work flow of our project
+
+<img src="images/ppt_ir.png">
 
 <h1 align="left">
   Contributors
