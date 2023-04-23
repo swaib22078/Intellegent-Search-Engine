@@ -11,8 +11,8 @@ Information retrievel Course Project
   Contributors
 </h1>
 
+- [Kamta Prasad](https://github.com/kamta332)
 - [Naveesh Rana](https://github.com/Naveeshrana22043)
-- [Nandini Soni](https://tailwindcss.com/)
-- [Divy Thakkar](https://greensock.com/gsap/)
-- [Kamta Prasad](https://tailwindcss.com/)
+- [Nandini Soni](https://github.com/soninandini)
+- [Divy Thakkar](https://github.com/divythakkar111)
 - [Swaib ilias Mazumder](https://github.com/swaib22078)
