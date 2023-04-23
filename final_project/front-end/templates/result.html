@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Results</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+		<!--<link rel="stylesheet" href="my_styles.css"> -->
+	</head>
+	<body>
+		{% if data %}
+			<h2>Summary of  {{query}}:</h2>
+			{% for url,summary in data.items() %}
+				<h3>{{ url }}</h3>
+				<p>{{ summary[0] }}</p>
+				<p>F1-Score is {{ summary[1] }}</p>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

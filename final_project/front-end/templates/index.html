@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+		<!--<link rel="stylesheet" href="my_styles.css"> -->
+	</head>
+	<body>
+		<div class="container">
+			<form action="/" method="POST" class="search_bar">
+				<!--<label for="query">Query:</label>
+				<input type="text" id="query" name="q" required>
+				<br>-->
+				<input type="text" placeholder="search anything"name="q">
+				<button type="submit" value="Search"><img src="static/css/images/search.png"></button>
+			</form>
+		</div>
+		<!--{% if data %}
+			<h2>Summary:</h2>
+			{% for url,summary in data.items() %}
+				<h3>{{ url }}</h3>
+				<p>{{ summary }}</p>
+				
+			{% endfor %}
+		{% endif %}-->
+	</body>
+</html>
