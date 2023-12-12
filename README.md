@@ -15,7 +15,7 @@ FRONT PAGE OF OUR PROJECT
   Synopsis
 </h1>
 
-“ Fact extraction from a given Query with ranking as relevancy ” - The problem statement is to develop a system that can extract relevant facts or information from a given website link when a query is entered. The system will utilize a mixture of several techniques and advance algorithms. The main goal is to provide users with accurate and useful information from the website link that is most relevant to their query by ranking them.
+“ Fact extraction from a given Query with ranking as relevancy ” - The problem statement is to develop a system that can extract relevant facts or information from multiple websites when a query is entered/searched. The system will utilize a mixture of several techniques and advance algorithms. The main goal is to provide users with accurate and useful information from the websites that is most relevant to their query by ranking them.
 
 <h1 align="left">
   Motivation
