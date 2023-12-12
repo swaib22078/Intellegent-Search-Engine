@@ -52,7 +52,7 @@ FLASK,
 
 ```bash
 Python
-bm25(Rank retrievel),web scraping,F1 Score.
+bm25(Rank retrieval),web scraping,F1 Score.
 ```
 3.Required Python libraries
 
